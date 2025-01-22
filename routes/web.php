@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//  Route::get('/', function () {
+//      return view('welcome');
+//  });
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//ruta de datos personales del egresado
+Route::get('/ud_egresado', [App\Http\Controllers\EgresadoController::class, 'index']);
