@@ -48,7 +48,7 @@
                                         <div class="p-2 mt-5">
                                             <form action="{{ route('login')}}" method="post">
                                                 @csrf
-                                            
+
                                                 <div class="mb-3">
                                                     <label for="username" class="form-label">Usuario</label>
                                                     <input type="text" class="form-control @error('email') is-invalid @enderror" value="{{ old('email', '') }}" id="username" name="email" placeholder="Ingrese el nombre de usuario">
@@ -99,7 +99,7 @@
                                             </form>
 
                                             <div class="text-center mt-5">
-                                                <p class="mb-0">No tienes cuenta? <a href="register" class="fw-semibold text-secondary text-decoration-underline"> 
+                                                <p class="mb-0">No tienes cuenta? <a href="register" class="fw-semibold text-secondary text-decoration-underline">
                                                     Registrarse     </a> </p>
                                             </div>
                                         </div>
@@ -120,6 +120,6 @@
 </section>
 @endsection
 @section('script')
-<script src="{{ asset('build/js/pages/password-addon.init.js') }}"></script>
+<script src="{{ asset('js/pages/password-addon.init.js') }}"></script>
 
 @endsection

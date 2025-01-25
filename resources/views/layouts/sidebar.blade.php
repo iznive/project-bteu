@@ -4,18 +4,18 @@
     <div class="navbar-brand-box">
         <a href="home" class="logo logo-dark">
             <span class="logo-sm">
-                <img src="{{ URL::asset('build/images/logo-sm.png') }}" alt="" height="26">
+                <img src="{{ asset('images/logo-sm.png') }}" alt="" height="26">
             </span>
             <span class="logo-lg">
-                <img src="{{ URL::asset('build/images/logo-dark.png') }}" alt="" height="26">
+                <img src="{{ asset('images/logo-dark.png') }}" alt="" height="26">
             </span>
         </a>
         <a href="home" class="logo logo-light">
             <span class="logo-sm">
-                <img src="{{ URL::asset('build/images/logo-sm.png') }}" alt="" height="26">
+                <img src="{{ asset('images/logo-sm.png') }}" alt="" height="26">
             </span>
             <span class="logo-lg">
-                <img src="{{ URL::asset('build/images/logo-light.png') }}" alt="" height="26">
+                <img src="{{ asset('images/logo-light.png') }}" alt="" height="26">
             </span>
         </a>
         <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover"
@@ -70,7 +70,7 @@
                     <div class="collapse menu-dropdown" id="sidebarMultilevel">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="#" class="nav-link" data-key="t-level-1.1"> Actualizar datos</a>
+                                <a href="ud_empleador" class="nav-link" data-key="t-level-1.1"> Actualizar datos</a>
                                 <a href="#" class="nav-link" data-key="t-level-1.1"> Publicar empleos</a>
                                 <a href="#" class="nav-link" data-key="t-level-1.1"> Solicitudes</a>
                             </li>
@@ -84,6 +84,12 @@
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarCat">
                         <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-key="t-level-1.1">Roles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-key="t-level-1.1">Permisos</a>
+                            </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link" data-key="t-level-1.1">Perfiles</a>
                             </li>
@@ -108,6 +114,11 @@
                             </li>
                         </ul>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="users-show">
+                        <i class="bi bi-people"></i> <span data-key="t-components">Usuarios</span>
+                    </a>
                 </li>
 
             </ul>

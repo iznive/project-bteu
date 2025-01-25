@@ -6,19 +6,19 @@
                 <div class="navbar-brand-box horizontal-logo">
                     <a href="index" class="logo logo-dark">
                         <span class="logo-sm">
-                            <img src="{{ URL::asset('build/images/logo-sm.png') }}" alt="" height="22">
+                            <img src="{{ asset('images/logo-sm.png') }}" alt="" height="22">
                         </span>
                         <span class="logo-lg">
-                            <img src="{{ URL::asset('build/images/logo-dark.png') }}" alt="" height="25">
+                            <img src="{{ asset('images/logo-dark.png') }}" alt="" height="25">
                         </span>
                     </a>
 
                     <a href="index" class="logo logo-light">
                         <span class="logo-sm">
-                            <img src="{{ URL::asset('build/images/logo-sm.png') }}" alt="" height="22">
+                            <img src="{{ asset('images/logo-sm.png') }}" alt="" height="22">
                         </span>
                         <span class="logo-lg">
-                            <img src="{{ URL::asset('build/images/logo-light.png') }}" alt="" height="25">
+                            <img src="{{ asset('images/logo-light.png') }}" alt="" height="25">
                         </span>
                     </a>
                 </div>
@@ -136,7 +136,7 @@
                                     class="text-reset notification-item d-block dropdown-item position-relative unread-message">
                                     <div class="d-flex">
                                         <div class="position-relative me-3 flex-shrink-0">
-                                            <img src="{{ URL::asset('build/images/users/avatar-2.jpg') }}"
+                                            <img src="{{ asset('images/users/avatar-2.jpg') }}"
                                                 class="rounded-circle avatar-xs" alt="user-pic">
                                             <span
                                                 class="active-badge position-absolute start-100 translate-middle p-1 bg-success rounded-circle">
@@ -203,7 +203,7 @@
                                     <div class="d-flex">
 
                                         <div class="position-relative me-3 flex-shrink-0">
-                                            <img src="{{ URL::asset('build/images/users/avatar-8.jpg') }}"
+                                            <img src="{{ asset('images/users/avatar-8.jpg') }}"
                                                 class="rounded-circle avatar-xs" alt="user-pic">
                                             <span
                                                 class="active-badge position-absolute start-100 translate-middle p-1 bg-warning rounded-circle">
@@ -250,7 +250,7 @@
                         aria-haspopup="true" aria-expanded="false">
                         <span class="d-flex align-items-center">
                             <img class="rounded-circle header-profile-user"
-                                src="@if (Auth::user()->avatar) {{ asset('storage/images/users/' . Auth::user()->avatar) }} @else {{ asset('build/images/users/avatar-1.jpg') }} @endif"
+                                src="@if (Auth::user()->avatar) {{ asset('storage/images/users/' . Auth::user()->avatar) }} @else {{ asset('images/users/avatar-1.jpg') }} @endif"
                                 alt="Header Avatar">
                             <span class="text-start ms-xl-2">
                                 <span
@@ -272,7 +272,7 @@
                                 class="badge bg-success-subtle text-success mt-1 float-end">New</span><i
                                 class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span
                                 class="align-middle">Configuración</span></a>
-                        
+
                         <a class="dropdown-item mdi mdi-logout" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout')}}
@@ -349,7 +349,7 @@
                                 People</h5>
                             <a href="javascript:void(0);" class="list-group-item dropdown-item notify-item">
                                 <div class="d-flex align-items-center">
-                                    <img src="{{ URL::asset('build/images/users/avatar-1.jpg') }}" alt=""
+                                    <img src="{{ asset('images/users/avatar-1.jpg') }}" alt=""
                                         class="avatar-xs rounded-circle flex-shrink-0 me-2" />
                                     <div>
                                         <h6 class="mb-0">Ayaan Bowen</h6>
@@ -359,7 +359,7 @@
                             </a>
                             <a href="javascript:void(0);" class="list-group-item dropdown-item notify-item">
                                 <div class="d-flex align-items-center">
-                                    <img src="{{ URL::asset('build/images/users/avatar-7.jpg') }}" alt=""
+                                    <img src="{{ asset('images/users/avatar-7.jpg') }}" alt=""
                                         class="avatar-xs rounded-circle flex-shrink-0 me-2" />
                                     <div>
                                         <h6 class="mb-0">Alexander Kristi</h6>
@@ -369,7 +369,7 @@
                             </a>
                             <a href="javascript:void(0);" class="list-group-item dropdown-item notify-item">
                                 <div class="d-flex align-items-center">
-                                    <img src="{{ URL::asset('build/images/users/avatar-5.jpg') }}" alt=""
+                                    <img src="{{ asset('images/users/avatar-5.jpg') }}" alt=""
                                         class="avatar-xs rounded-circle flex-shrink-0 me-2" />
                                     <div>
                                         <h6 class="mb-0">Alan Carla</h6>
@@ -410,9 +410,9 @@
                 </div>
             </div>
 
-        </div> 
-    </div> 
-</div> 
+        </div>
+    </div>
+</div>
 <!-- /.modal-content -->
  <!-- /.modal-dialog -->
    <!-- /.modal -->

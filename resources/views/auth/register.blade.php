@@ -15,12 +15,12 @@
                                     <div class="auth-card card bg-primary h-100 border-0 shadow-none p-sm-3 overflow-hidden">
                                         <div class="card-body p-4 d-flex justify-content-between flex-column">
                                             <div class="auth-image">
-                                                <!-- <img src="{{ asset('build/images/logo-light-full.png') }}" alt="" height="26" />
-                                                <img src="{{ asset('build/images/effect-pattern/auth-effect-2.png') }}" alt="" -->
+                                                <!-- <img src="{{ asset('images/logo-light-full.png') }}" alt="" height="26" />
+                                                <img src="{{ asset('images/effect-pattern/auth-effect-2.png') }}" alt="" -->
                                                     <!-- class="auth-effect-2" /> -->
-                                                <img src="{{ asset('build/images/effect-pattern/auth-effect.png') }}" alt=""
+                                                <img src="{{ asset('images/effect-pattern/auth-effect.png') }}" alt=""
                                                     class="auth-effect" />
-                                                <img src="{{ asset('build/images/effect-pattern/auth-effect.png') }}" alt=""
+                                                <img src="{{ asset('images/effect-pattern/auth-effect.png') }}" alt=""
                                                     class="auth-effect-3" />
                                             </div>
 
@@ -52,18 +52,19 @@
                                                 <form class="needs-validation" novalidate method="POST"
                                                     action="{{ route('register') }}" enctype="multipart/form-data">
                                                     @csrf
-                                                    
+
                                                     <!-- Base Radios -->
                                                     <div class="mb-4">
-                                                        <label for="fk_perfil" class="form-label">¿Que soy? <span
+                                                        <label for="FK_Perfil" class="form-label">¿Que soy? <span
                                                         class="text-danger">*</span></label>
-                                                        <select class="form-select mb-3" id="fk_perfil"  name="fk_perfil" aria-label="Default select example" required>
-                                                             <option value=""  selected ></option> 
+                                                        <select class="form-select mb-3" id="FK_Perfil"  name="FK_Perfil" aria-label="Default select example" required>
+                                                             <option value=""  selected ></option>
                                                             <!-- <option value="1">Administrador</option> -->
+                                                            <option value="1">Administrador</option>
                                                             <option value="2">Egresado</option>
                                                             <option value="3">Empleador</option>
                                                         </select>
-                                                        @error('fk_perfil')
+                                                        @error('FK_Perfil')
                                                             <span class="invalid-feedback" role="alert">
                                                                 <strong>{{ $message }}</strong>
                                                             </span>
@@ -144,9 +145,9 @@
                                                         </div>
                                                     </div>
 
-                                                   
 
-                                                    
+
+
 
                                                     <div class="mb-4">
                                                         <p class="mb-0 fs-12 text-muted fst-italic">Al registrarte estás de acuerdo con BTEU <a href="#"
@@ -213,6 +214,6 @@
     </section>
 @endsection
 @section('script')
-    <script src="{{ asset('build/js/pages/form-validation.init.js') }}"></script>
-    <script src="{{ asset('build/js/pages/passowrd-create.init.js') }}"></script>
+    <script src="{{ asset('js/pages/form-validation.init.js') }}"></script>
+    <script src="{{ asset('js/pages/passowrd-create.init.js') }}"></script>
 @endsection

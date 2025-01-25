@@ -244,7 +244,7 @@ return [
     "leaderboard" => "Tablero de líderes",
     "basic" => "Básica",
     "basic-2" => "Básica 2",
-    "cover" => "Cubrir", 
+    "cover" => "Cubrir",
 
     "nft"=> "NFT",
     "email"=> "Correo electrónico",
@@ -283,7 +283,5 @@ return [
     "api-key" => "Clave API",
     "privacy-policy" => "Política de privacidad",
     "hot" => "Caliente",
-
-
 ];
 ?>
