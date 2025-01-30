@@ -47,4 +47,13 @@ class LoginController extends Controller
         return redirect()->route('login');
     }
 
+    public function redirectPath(){
+        if(\Auth::user()->estatus === 1){
+            return "/home"; //admin
+        }else{
+            \Auth::logout();
+            return "/";
+        }
+    }
+
 }

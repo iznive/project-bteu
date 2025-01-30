@@ -3,7 +3,7 @@
 @lang('translation.dashboards')
 @endsection
 @section('css')
-
+<link href="{{ asset('libs/swiper/swiper-bundle.min.css') }}" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
 
@@ -31,5 +31,12 @@
 @endsection
 
 @section('script')
+<script src="{{ asset('libs/swiper/swiper-bundle.min.js') }}"></script>
+<script src="{{ asset('libs/dropzone/dropzone-min.js') }}"></script>
+<script src="{{ asset('js/pages/form-file-upload.init.js') }}"></script>
+
+<!-- dashboard init -->
+<script src="{{ asset('libs/list.js/list.min.js') }}"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 
 @endsection

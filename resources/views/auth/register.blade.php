@@ -55,16 +55,16 @@
 
                                                     <!-- Base Radios -->
                                                     <div class="mb-4">
-                                                        <label for="FK_Perfil" class="form-label">¿Que soy? <span
+                                                        <label for="perfil" class="form-label">¿Que soy? <span
                                                         class="text-danger">*</span></label>
-                                                        <select class="form-select mb-3" id="FK_Perfil"  name="FK_Perfil" aria-label="Default select example" required>
+                                                        <select class="form-select mb-3" id="perfil"  name="perfil" aria-label="Default select example" required>
                                                              <option value=""  selected ></option>
                                                             <!-- <option value="1">Administrador</option> -->
                                                             <option value="1">Administrador</option>
                                                             <option value="2">Egresado</option>
                                                             <option value="3">Empleador</option>
                                                         </select>
-                                                        @error('FK_Perfil')
+                                                        @error('perfil')
                                                             <span class="invalid-feedback" role="alert">
                                                                 <strong>{{ $message }}</strong>
                                                             </span>
